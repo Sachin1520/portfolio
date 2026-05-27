@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Mandal | Backend Developer</title>
+    <style>
+        :root {
+            --primary-color: #3b82f6; /* Modern Blue */
+            --dark-bg: #0f172a;
+            --light-bg: #f8fafc;
+            --text-main: #334155;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-main);
+        }
+
+        /* Hero Section with Gradient */
+        header {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #1e293b 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--primary-color);
+            object-fit: cover;
+            margin-bottom: 1rem;
+            background-color: #cbd5e1; /* Placeholder color */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            color: #94a3b8;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -30px auto 2rem auto; /* Overlaps with header slightly */
+            padding: 0 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Glassmorphism/Modern Cards */
+        section {
+            background: var(--white);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--dark-bg);
+            font-size: 1.8rem;
+            margin-top: 0;
+            display: inline-block;
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background: #e2e8f0;
+            color: var(--dark-bg);
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .skill-tag:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .project-card {
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: var(--dark-bg);
+        }
+
+        .project-status {
+            display: inline-block;
+            background: #fef3c7;
+            color: #d97706;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--white);
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Resume Button Special Style */
+        .resume-btn-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Aap yahan 'your-photo.jpg' ki jagah apni actual photo ka naam daal sakte hain -->
+        <img src="your-photo.jpg" alt="Sachin Mandal" class="profile-img" onerror="this.style.display='none'">
+        <h1>Sachin Mandal</h1>
+        <p>Backend Developer | Java & Spring Boot</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="resume-btn-container">
+            <a href="Sachin_Mandal_Resume.pdf" target="_blank" class="btn btn-primary">📄 Download Updated Resume</a>
+        </div>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Sachin! I am an MCA graduate from Galgotias University, based in Noida. I specialize in backend development and have a strong foundation in building robust, scalable, and secure applications. I am passionate about solving complex problems through code, optimizing databases, and designing efficient REST APIs.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Tech Stack</h2>
+            <div class="skills">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">MySQL / PostgreSQL</span>
+                <span class="skill-tag">Data Structures & Algorithms</span>
+                <span class="skill-tag">RESTful APIs</span>
+                <span class="skill-tag">Git & GitHub</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            
+            <div class="project-card">
+                <div class="project-title">Keep Silent Library System <span style="color: #64748b; font-size: 0.9rem; font-weight: normal;">(Freelance)</span></div>
+                <p>Engineered a scalable backend architecture for a custom library management system to streamline operations.</p>
+                <ul>
+                    <li>Designed and implemented RESTful APIs to manage book inventory and user borrowing logic.</li>
+                    <li>Structured relational database schemas using SQL to ensure strict data integrity.</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Community Platform for Housewives <span class="project-status">In-Progress</span></div>
+                <p>Developing a dedicated software platform to connect housewives, fostering communication and resource sharing.</p>
+                <ul>
+                    <li>Planning the core backend architecture and database relationships.</li>
+                    <li>Designing secure user authentication and profile management systems.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Let's Connect</h2>
+            <p>I am actively looking for Software Engineer roles. Whether it's a job opportunity or a freelance project, my inbox is always open.</p>
+            <div class="links">
+                <a href="mailto:your-email@gmail.com" class="btn btn-primary">Email Me</a>
+                <a href="https://linkedin.com/in/sachinmandal06" target="_blank" class="btn btn-outline">LinkedIn</a>
+                <a href="https://github.com/your-github-username" target="_blank" class="btn btn-outline">GitHub</a>
+            </div>
+        </section>        
+        
+    </div>
+
+</body>
+</html>
